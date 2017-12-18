@@ -1,0 +1,68 @@
+// 1.Odd divisors
+
+var n = Number(prompt("Enter the number"));
+var divisor = 1;
+
+while(n>=divisor){
+if(n%divisor==0){
+console.log(divisor)
+divisor++;
+divisor++;
+}
+}
+
+// 2.Digits
+
+var n = Number(prompt("Enter the number"));
+while(n>0){
+n = n % 10;
+console.log(n);
+n = n/10;
+}
+
+// 3. Number of divisors
+
+var num = Number(prompt(" Enter the number"));
+var counter = 0;
+var divisor = 1;
+if(num>0){
+while(num>=divisor){
+if(num%divisor ==0){
+counter++;
+}
+divisor++;
+}
+console.log(counter);
+}
+else{
+console.log("Duzgun reqemi gir")
+}
+
+
+// 5. How many times repeat?
+
+var x = Number(prompt("Enter the number"));
+var y = 0;
+
+
+while(x>0){
+y = y + x%10;
+x = x /10;
+}
+var z = x - y;
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
