@@ -1,0 +1,119 @@
+// 1. First or last?
+
+var x = Number(prompt("X deyerini girin"));
+var ilkreqem = x/100;
+var sonreqem = x%10;
+
+if (ilkreqem > sonreqem) {
+    console.log(ilkreqem);
+ else if(ilkreqem < sonreqem){
+    console.log(sonreqem);
+}else{
+    console.log("=")
+
+
+// 2. Season
+
+var x = Number(prompt("The number of month"));
+
+if(x<=12 && x>=1){
+		if(x==12 || x==1 || x==2){
+			console.log("Winter");
+		}else if(x>=3 && x<=5){
+			console.log("Spring");
+		}else if(x>=6 && x <=8){
+			console.log("Summer");
+		}else {
+			console.log("Autumn");
+}
+
+// 3. Even and odd numbers.
+
+var a = Number(prompt("A deyerini girin"));
+var b = Number(prompt("B deyerini girin"));
+var c = Number(prompt("C deyerini girin"));
+var cut = "";
+var tek = "";
+var cut1 = "";
+var tek1 = "";
+var cut2 = "";
+var tek2 = "";
+
+if(a%2==0){
+	var a = cut;
+}else if(a%2==1){
+	var a = tek;
+}else if(b%2==0){
+	var b = cut1;
+}else if(b%2==1){
+	var b = tek1;
+}else if(c%2==0){
+	var c = cut2;
+}else if(c%2==1){
+	var c = tek2;
+ }
+
+if(a == cut && b == tek1 && c ==tek2){
+	console.log("yes")
+}if(a == cut && b == tek1 && c == cut2){
+	console.log("yes")
+}if(a == cut && b == cut1 && c == tek2){
+	console.log("yes")
+}if(a == tek && b == tek1 && c == cut2){
+	console.log("yes")
+}if(a == tek && b == cut1 && c == tek2){
+	console.log("yes")
+}if(a == tek && b == cut1 && c == cut2){
+	console.log("yes")
+}else{
+	console.log("no")
+
+}
+
+
+// 4. Wardrobe
+
+var a = Number(prompt("skafin eni"));
+var b = Number(prompt("skafin hundurluyu"));
+var c = Number(prompt("c ni daxil edin"));
+var x = Number(prompt("qapinin hundurluyu"));
+var y = Number(prompt("qapinin eni"));
+
+if (x>b && y>=a){
+	console.log("yes")
+}else{
+	console.log("no")
+}
+
+
+// 5. Tourist
+
+var k = Number(prompt("number of pupils"));
+var w = Number(prompt("weight"));
+var a1 = Number(prompt("weight of first tent"));
+var b1 = Number(prompt("number of people in first tent"));
+var a2 = Number(prompt("weight of second tent"));
+var b2 = Number(prompt("number of people in second tent"));
+var a3 = Number(prompt("weight of third tent"));
+var b3 = Number(prompt("number of people in third tent"));
+
+if (a1 > 0 && a2 > 0 && a3 > 0 && b1 > 0 && b2 > 0 && b3 > 0 && k > 0 && w > 0) {
+    if ((a1 + a2 + a3) <= w && (b1 + b2 + b3) >= k) {
+        console.log("Yes");
+    } else {
+        console.log("No");
+    }
+} else {
+    console.log("Duzgun reqem gir");
+}
+
+
+
+
+
+
+
+
+
+
+
